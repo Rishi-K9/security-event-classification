@@ -1,0 +1,13 @@
+Event_ID,Timestamp,Event_Type,Source,Observed_Activity,Classification,Reason
+E001,2026-10-20 09:00:00,Authentication,Employee laptop,Successful login from known device and usual location,Normal,Login matches expected user behavior with no unusual indicators
+E002,2026-10-20 09:05:00,Authentication,Employee laptop,One failed login followed by successful login,Normal,A single failed attempt can result from a mistyped password
+E003,2026-10-20 09:10:00,Authentication,VPN gateway,12 failed login attempts for one account in 2 minutes,Suspicious,Repeated failures may indicate password guessing or a forgotten password
+E004,2026-10-20 09:15:00,Network,Office workstation,Connection to an approved internal file server,Normal,Access is consistent with routine internal activity
+E005,2026-10-20 09:20:00,Authentication,Remote access portal,Successful login from an unfamiliar country,Suspicious,Unexpected location may indicate account compromise but needs verification
+E006,2026-10-20 09:25:00,Privilege,Employee workstation,Standard user attempts to access an administrator-only resource,Suspicious,Unexpected access attempt may indicate misconfiguration or privilege probing
+E007,2026-10-20 09:30:00,Endpoint,Employee laptop,Antivirus detects and quarantines a test malware file,Potentially Malicious,Malware detection requires investigation even when quarantined
+E008,2026-10-20 09:35:00,Network,Workstation,Repeated connections to a domain flagged by security tools,Potentially Malicious,May indicate communication with malicious infrastructure
+E009,2026-10-20 09:40:00,Authentication,Employee account,Successful login after many failed attempts,Suspicious,Could indicate a successful password-guessing attempt
+E010,2026-10-20 09:45:00,Data access,File server,Unusually large download of sensitive files,Potentially Malicious,May indicate data theft or authorized bulk activity
+E011,2026-10-20 09:50:00,Endpoint,Employee laptop,Approved operating system update completed,Normal,Expected software maintenance
+E012,2026-10-20 09:55:00,Privilege,Server audit log,Unexpected administrator privilege grant followed by unusual activity,Potentially Malicious,May indicate unauthorized privilege escalation
